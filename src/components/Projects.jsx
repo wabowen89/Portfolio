@@ -1,7 +1,7 @@
 // src/components/Projects.js
 
-import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
+import { CodeIcon } from "@heroicons/react/solid";
 import { projects } from "../data";
 
 
@@ -19,12 +19,16 @@ export default function Projects() {
             Below are a few gifs displaying the UI for web applications I have built. Please click the gif to view the source code on my GitHub.
           </p>
         </div>
+        
         <div className="flex flex-wrap -m-4">
           {projects.map((project) => (
             <a
               href={project.link}
               key={project.image}
-              className="sm:w-1/2 w-100 p-4">
+              className="sm:w-1/2 w-100 p-4"
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
               <div className="flex relative">
                 <img
                   alt="gallery"
@@ -47,4 +51,5 @@ export default function Projects() {
       </div>
     </section>
   );
-}
+};
+

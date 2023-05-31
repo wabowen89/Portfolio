@@ -12,7 +12,13 @@ export default function About() {
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
             Hi, I'm Will.
-            <br className="hidden lg:inline-block" />I build web applications!
+            <br className="hidden lg:inline-block" />I am a Full Stack Web Developer!
+            {/* <Typed
+              strings={["I build web applications."]}
+              typeSpeed={70}
+              backSpeed={50}
+              loop
+            /> */}
           </h1>
           <p className="mb-8 leading-relaxed">
             I am a passionate coder working with multiple different languages. I am based in San Diego and love to solve real-world problems with the use of technology. I am currently working with Ruby/Ruby on Rails/React? and PostgreSQL, but would love to learn any new language necessary to accomplish the task. Always a team player, working with others is one of my favorite aspects of the job. Feel free to take a look at some of my past projects. If you like what you see, please feel free to reach out!
@@ -52,7 +58,7 @@ export default function About() {
 
       </div>
       <img
-        className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6"
+        className=" lg:max-w-lg lg:w-full md:w-1/2 w-5/6"
         alt="headshot"
         src={Me}
       />
