@@ -2,6 +2,8 @@
 
 import React from "react";
 import Me from "../assets/Me.jpg"
+import LI from "../assets/LI.png"
+import Github from "../assets/Github.png"
 
 export default function About() {
   return (
@@ -27,21 +29,34 @@ export default function About() {
               Check Out My Other Projects
             </a>
           </div>
+          <br />
+          <div className="flex">
+            <a href="https://linkedin.com/in/wabowen89" target="_blank" rel="noopener noreferrer">
+              <img
+                className="rounded"
+                alt="LinkedIn"
+                src={LI}
+                style={{ width: "40px", height: "auto", marginRight: "10px" }}
+              />
+            </a>
+            <a href="https://github.com/wabowen89" target="_blank" rel="noopener noreferrer">
+            <img
+              className="rounded"
+              alt="Github"
+              src={Github}
+              style={{ width: "40px", height: "auto" }}
+            />
+            </a>
+          </div>
         </div>
-        {/* <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <img
-            className="object-cover object-center rounded"
-            alt="hero"
-            src="./coding.svg"
-          />
-        </div> */}
+
       </div>
-      <img 
-        className= "lg:max-w-lg lg:w-full md:w-1/2 w-5/6"
-        alt= "headshot"
-        src= {Me}
-        />
+      <img
+        className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6"
+        alt="headshot"
+        src={Me}
+      />
     </section>
-    
+
   );
 }
