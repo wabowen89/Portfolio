@@ -16,7 +16,7 @@ export default function Projects() {
             Apps I've Built
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-          Below are a few gifs displaying the UI for web applications I have built. Please click the gif to view the source code on my GitHub.
+            Below are a few gifs displaying the UI for web applications I have built. Please click the gif to view the source code on my GitHub.
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
