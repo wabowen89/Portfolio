@@ -20,7 +20,7 @@ export default function Projects() {
           </p>
         </div>
         
-        <div className="flex flex-wrap -m-4">
+        <div className="flex relative justify-center items-center">
           {projects.map((project) => (
             <a
               href={project.link}
@@ -29,7 +29,7 @@ export default function Projects() {
               target="_blank" 
               rel="noopener noreferrer"
             >
-              <div className="flex relative">
+              <div className="flex relative justify-center items-center">
                 <img
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
