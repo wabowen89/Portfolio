@@ -3,7 +3,7 @@ export const projects = [
     title: "HoneyHome",
     subtitle: "LEARN Capstone Project",
     description:
-      "This is my full stack project completed with LEARN academy. I worked with four teammates to create this application. We utilized JS, React, Ruby, Ruby on Rails, and PostgreSQL",
+      "This is my full stack project completed with LEARN academy. I worked with four teammates to create this application. We utilized JS, React, Ruby, Ruby on Rails, and PostgreSQL along with Devise and JWT Authentication.",
     image: "./gifs/HoneyHome.gif",
     link: "https://github.com/orgs/Team-WHAK/repositories",
   },
