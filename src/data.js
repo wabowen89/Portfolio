@@ -29,4 +29,5 @@ export const skills = [
   "Ruby on Rails",
   "Java",
   "PostgreSQL",
+  "Kotlin",
 ];
