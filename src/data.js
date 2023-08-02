@@ -30,4 +30,6 @@ export const skills = [
   "Java",
   "PostgreSQL",
   "Kotlin",
+  "Visual Studio Code",
+  "Android Studio",
 ];
