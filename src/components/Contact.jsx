@@ -33,6 +33,8 @@ export default function Contact() {
         <form
           netlify
           name="contact"
+          method="POST" // Add the method attribute
+          data-netlify="true" // Add the data-netlify attribute
           onSubmit={handleSubmit}>
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
             Hire Me
