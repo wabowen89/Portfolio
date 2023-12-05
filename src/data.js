@@ -1,5 +1,13 @@
 export const projects = [
   {
+    title: "Remote Controlled 1942 Jeep Willy",
+    subtitle: "RC Jeep Willy Project",
+    description:
+      "This project is a future gift for my nephew. I designed a 3D model of my father's 1942 Jeep Willy in Fusion 360. I am currently in the process of printing the body and attachments to the body. The vehicle is controlled utilizing two Arduino Uno R3's and an NRF24L antenna for radio communications. The Arduino's are programmed using the Arduino IDE. They are also controlling the rear motor and steering servo. Features to come: Speaker for Jeep sounds and LED headlights",
+    image: "",
+    link: "https://github.com/orgs/Jeep-Willy/repositories",
+  },
+  {
     title: "HoneyHome",
     subtitle: "LEARN Capstone Project",
     description:
@@ -7,29 +15,23 @@ export const projects = [
     image: "./gifs/HoneyHome.gif",
     link: "https://github.com/orgs/Team-WHAK/repositories",
   },
-  // {
-  //   title: "Tiki Treasure Hunt",
-  //   subtitle: "LEARN Jumpstart Project",
-  //   description:
-  //     "This is the final project from LEARN academy's Jumpstart Weekend course. I worked on this project with one other teammate. It utilizes HTML, CSS, and Javascript.",
-  //   image: "./gifs/HoneyHome.gif",
-  //   link: "https://wabowen89.github.io/wabowen.github.io/",
-  // },
-
-
 ];
-
 
 export const skills = [
   "JavaScript",
-  "React",
+  "Ruby",
+  "Kotlin",
+  "Java",
   "CSS",
   "HTML",
-  "Ruby",
+  "React.js",
   "Ruby on Rails",
-  "Java",
   "PostgreSQL",
-  "Kotlin",
   "Visual Studio Code",
   "Android Studio",
+  "Eclipse",
+  "Git",
+  "Jest",
+  "RSpec",
+  "Postman",
 ];
