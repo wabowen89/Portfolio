@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './Modal.css';
 
-export default function Modal() {
+export default function Modal({showModal, handleCloseModal}) {
   const [showModal, setShowModal] = useState(false); 
 
   const handleOpenModal = () => {
     setShowModal(true); 
   };
-  
+
   const handleCloseModal = () => {
     setShowModal(false); 
   };
