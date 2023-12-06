@@ -6,6 +6,7 @@ import Contact from "./components/Contact.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Projects from "./components/Projects.jsx";
 import Skills from "./components/Skills.jsx";
+import Modal from "./components/Modal.jsx"
 
 export default function App() {
   return (

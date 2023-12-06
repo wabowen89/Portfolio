@@ -4,8 +4,15 @@ export const projects = [
     subtitle: "RC Jeep Willy Project",
     description:
       "This project is a future gift for my nephew. I designed a 3D model of my father's 1942 Jeep Willy in Fusion 360. I am currently in the process of printing the body and attachments to the body. The vehicle is controlled utilizing two Arduino Uno R3's and an NRF24L antenna for radio communications. The Arduino's are programmed using the Arduino IDE. They are also controlling the rear motor and steering servo. Features to come: Speaker for Jeep sounds and LED headlights",
-    image: "",
+    image: "./gifs/HoneyHome.gif",
     link: "https://github.com/orgs/Jeep-Willy/repositories",
+  },
+  {
+    title: "bLinkup Sample Application",
+    subtitle: "Demonstration Application for bLinkup SDK",
+    description: "temp text",
+    image: "./gifs/HoneyHome.gif",
+    link: "https://github.com/blinkupsdk/bLinkupKotlinSample",
   },
   {
     title: "HoneyHome",

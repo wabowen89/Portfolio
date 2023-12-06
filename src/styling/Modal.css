@@ -1,0 +1,27 @@
+.modal {
+    display: flex;
+    position: center;
+    margin: 20px;
+    width: 50%;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    background-color: #222222;
+}
+
+.modal-content {
+    position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+}
+
+.close-modal-button {
+    background-color: grey;
+    color: black;
+}

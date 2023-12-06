@@ -1,30 +1,19 @@
-import React, { useState } from 'react';
-import './Modal.css';
+import React, { useState } from "react";
+import "../styling/Modal.css";
 
-export default function Modal({showModal, handleCloseModal}) {
-  const [showModal, setShowModal] = useState(false); 
-
-  const handleOpenModal = () => {
-    setShowModal(true); 
-  };
-
-  const handleCloseModal = () => {
-    setShowModal(false); 
-  };
-
+export default function Modal({ showModal, handleCloseModal }) {
   return (
-    <div>
-      <button onClick={handleOpenModal}>Open Modal</button>
-
-      {showModal && (
-        <div className="modal">
-          <div className="modal-content">
-            <h2>Modal Content</h2>
-            <p>This is the content of the modal.</p>
-            <button onClick={handleCloseModal}>Close Modal</button>
-          </div>
-        </div>
-      )}
+    <div className="modal">
+      <div className="modal-content">
+        <h2>Modal Content</h2>
+        <p>This is the content of the modal.</p>
+        <button
+        className="close-modal-button"
+        onClick={handleCloseModal}>
+          Will This Change The Tag Of the Close Button at all??????
+        </button>
+      </div>
     </div>
+
   );
 }
