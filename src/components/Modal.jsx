@@ -7,17 +7,19 @@ export default function Modal({ project, handleCloseModal }) {
       <div className="modal-overlay"></div>
       <div className="modal">
         <div className="modal-content">
-          <h1>{project.subtitle}</h1>
-          <p>
-            {project.description}
-          </p>
+          <h1 className="title">{project.subtitle}</h1>
+          <p>{project.description}</p>
+          <h2 className="stack">Tech Stack</h2>
+          <ul>
+            {project.stack.map((item, index) => {
+              const stackItem = <li key={index}>{item}</li>;
+              return stackItem;
+            })}
+          </ul>
           <div className="modal-images">
-            {project.proImages.map(image => {
+            {project.proImages.map((image) => {
               const imageElement = (
-                <img
-                key={image}
-                src={image.src}
-                alt={image.alt}/>
+                <img key={image} src={image.src} alt={image.alt} />
               );
               return imageElement;
             })}

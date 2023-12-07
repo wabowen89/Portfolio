@@ -1,11 +1,10 @@
-.modal {
+.modal-container {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  width: auto;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  border-radius: 5px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999; 
 }
 
 .modal-content {
@@ -42,23 +41,54 @@
   z-index: 0; 
 }
 
-.modal-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 9999; 
+/* tech stack list */
+
+.modal-content ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  padding: 0;
+  justify-items: center;
+  gap: 5px;
+  padding: 0 400px;
 }
 
+.modal-content li {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.modal-content li::before {
+  content: "•";
+  margin-right: 10px;
+  color: #000;
+  font-size: 18px;
+}
+
+/* image grid */
+
 .modal-images {
-  display: grid; /* Use grid layout */
-  grid-template-columns: repeat(3, 1fr); /* Define 3 columns */
-  gap: 10px; /* Space between images */
-  margin: 10px auto; /* Center the grid horizontally */
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
+  margin: 10px auto; 
 }
 
 .modal-images img{
-  width: 100%; /* Images fill grid columns */
+  width: 100%; 
   height: auto;
 }
+
+
+/* not sure this code is necessary. saving until further confirmation */
+/* .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 5px;
+} */

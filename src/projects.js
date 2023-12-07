@@ -3,12 +3,16 @@ export const projects = [
     title: "Remote Controlled 1942 Jeep Willy",
     subtitle: "RC Jeep Willy Project",
     description:
-      "This project is a future gift for my nephew. I designed a 3D model of my father's 1942 Jeep Willy in Fusion 360. I am currently in the process of printing the body and attachments to the body. The vehicle is controlled utilizing two Arduino Uno R3's and an NRF24L antenna for radio communications. The Arduino's are programmed using the Arduino IDE. They are also controlling the rear motor and steering servo. Features to come: Speaker for Jeep sounds and LED headlights",
+      "This project is a future gift for my nephew. I designed a 3D model of my father's 1942 Jeep Willy in Fusion 360. Utilizing pictures of the jeep as well as pictures found online, I developed a 3D model in Fusion360. All parts are printed using a Flashforge Finder3. I then purchased some Arduino Uno R3's as well as a few NRF24L01 wireless transceivers, L298N motor drivers, motors, servos, and joysticks. I then utilized the native Arduino IDE to program the Arduino's to interface with each of the components followed by communication between two Arduino boards. This has been a process of trail and error as I am constantly running into new problems that are outside my knowledge scope. I am still in the process of printing the body and parts to be added to the body. Features to come: LED headlights and a speaker to play Jeep noises",
     src: "./gifs/HoneyHome.gif",
     alt: "1942 Jeep Willy Model",
     stack: [
       "Arduino Uno R3",
       "Arduino IDE",
+      "RHReliableDatagram Library",
+      "RH_NRF24 Library",
+      "PWMServo Library",
+      "SPI Library",
       "NRF24L01 Wireless Transceiver",
       "L298N Motor Driver",
       "Fusion360",
