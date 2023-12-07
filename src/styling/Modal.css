@@ -1,27 +1,64 @@
 .modal {
-    display: flex;
-    position: center;
-    margin: 20px;
-    width: 50%;
-    height: auto;
-    left: 50%;
-    top: 50%;
-    background-color: #222222;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .modal-content {
-    position: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-    color: black;
+  display: flex-wrap;
+  flex-wrap: wrap;
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  min-width: 1500px;
+  min-height: 700px;
+  max-height: 500px;
+  width: auto;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  color: black;
+  overflow-y: auto;
 }
 
 .close-modal-button {
-    background-color: grey;
-    color: black;
+  background-color: grey;
+  color: black;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0; 
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999; 
+}
+
+.modal-images {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(3, 1fr); /* Define 3 columns */
+  gap: 10px; /* Space between images */
+  margin: 10px auto; /* Center the grid horizontally */
+}
+
+.modal-images img{
+  width: 100%; /* Images fill grid columns */
+  height: auto;
 }
