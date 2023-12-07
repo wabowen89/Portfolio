@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { CodeIcon } from "@heroicons/react/solid";
-import { projects } from "../data";
+import { projects } from "../projects.js";
 import Modal from "./Modal"
 
 
@@ -40,9 +40,9 @@ export default function Projects() {
           {projects.map((project) => (
             <div className="bg-gray-900 bg-opacity-75 p-4">
               <img
-                alt="gallery"
                 className="w-full h-full object-cover object-center mb-4 cursor-pointer"
-                src={project.image}
+                src={project.src}
+                alt={project.alt}
                 onClick={() => handleOpenModal(project)}
               />
               <h1

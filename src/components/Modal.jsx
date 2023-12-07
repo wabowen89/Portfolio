@@ -7,7 +7,7 @@ export default function Modal({ project, handleCloseModal }) {
       <div className="modal-overlay"></div>
       <div className="modal">
         <div className="modal-content">
-          <h2>{project.subtitle}</h2>
+          <h1>{project.subtitle}</h1>
           <p>
             {project.description}
           </p>

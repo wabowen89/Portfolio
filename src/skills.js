@@ -1,0 +1,18 @@
+export const skills = [
+  "JavaScript",
+  "Ruby",
+  "Kotlin",
+  "Java",
+  "CSS",
+  "HTML",
+  "React.js",
+  "Ruby on Rails",
+  "PostgreSQL",
+  "Visual Studio Code",
+  "Android Studio",
+  "Eclipse",
+  "Git",
+  "Jest",
+  "RSpec",
+  "Postman",
+];
