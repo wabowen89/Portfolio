@@ -38,7 +38,7 @@ export default function Projects() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {projects.map((project) => (
-            <div key={project.image} className="bg-gray-900 bg-opacity-75 p-4">
+            <div className="bg-gray-900 bg-opacity-75 p-4">
               <img
                 alt="gallery"
                 className="w-full h-full object-cover object-center mb-4 cursor-pointer"
