@@ -1,19 +1,32 @@
 import React, { useState } from "react";
 import "../styling/Modal.css";
 
-export default function Modal({ showModal, handleCloseModal }) {
+export default function Modal({ project, handleCloseModal }) {
   return (
-    <div className="modal">
-      <div className="modal-content">
-        <h2>Modal Content</h2>
-        <p>This is the content of the modal.</p>
-        <button
-        className="close-modal-button"
-        onClick={handleCloseModal}>
-          Will This Change The Tag Of the Close Button at all??????
-        </button>
+    <div className="modal-container">
+      <div className="modal-overlay"></div>
+      <div className="modal">
+        <div className="modal-content">
+          <h2>{project.subtitle}</h2>
+          <p>
+            {project.description}
+          </p>
+          <div className="modal-images">
+            {project.proImages.map(image => {
+              const imageElement = (
+                <img
+                key={image}
+                src={image.src}
+                alt={image.alt}/>
+              );
+              return imageElement;
+            })}
+          </div>
+          <button className="close-modal-button" onClick={handleCloseModal}>
+            Close
+          </button>
+        </div>
       </div>
     </div>
-
   );
 }
