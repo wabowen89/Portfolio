@@ -22,6 +22,17 @@ export default function Modal({ project, handleCloseModal }) {
             </ul>
           </div>
         </div>
+        {project.features.length > 0 && (
+          <div className="features-container">
+            <h2 className="features-title">Upcoming Features</h2>
+            <div className="features-list">
+                {project.features.map((item, index) => {
+                  const featureItem = <li key={index}>{item}</li>;
+                  return featureItem;
+                })}
+            </div>
+          </div>
+        )}
         <div className="links-container">
           <div className="links-title">
             {project.website || project.appStore ? (
