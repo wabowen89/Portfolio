@@ -33,7 +33,8 @@ export const projects = [
       },
     ],
     github: "https://github.com/orgs/Jeep-Willy/repositories",
-    site: "",
+    website: "",
+    appStore: "a",
   },
   {
     title: "bLinkup Sample Application",
