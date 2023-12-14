@@ -72,9 +72,6 @@ export default function Modal({ project, handleCloseModal }) {
             return imageElement;
           })}
         </div>
-        {/* <button className="close-modal-button" onClick={handleCloseModal}>
-            Close
-          </button> */}
       </div>
       <div className="close-modal-icon" onClick={handleCloseModal}>
         X
