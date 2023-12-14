@@ -7,13 +7,34 @@
   z-index: 9999; 
 }
 
+.close-modal-icon {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  cursor: pointer;
+  color: red;
+  z-index: 1;
+}
+
+.modal-overlay {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0; 
+}
+
+/* modal content */
 .modal-content {
-  display: flex-wrap;
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
   position: fixed; 
   top: 50%; 
   left: 50%; 
-  min-width: 1500px;
+  min-width: 1300px;
   min-height: 700px;
   max-height: 500px;
   width: auto;
@@ -26,44 +47,63 @@
   overflow-y: auto;
 }
 
-.close-modal-icon {
-  position: absolute;
-  bottom: 60px; /* Adjust the value to position the icon below the modal */
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 20px;
-  cursor: pointer;
-  color: red;
-  z-index: 1;
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex: 1;
 }
 
-.modal-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 0; 
+.description-contents {
+  display: flex;
+  text-align: left;
+  width: 800px;
+  padding-right: 0px;
+  text-indent: 24px;
+}
+
+/* title elements */
+
+.title{
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.stack{
+  text-align: left;
+  font-size: 20px;
+  padding-left: 100px;
+  padding-right: 0px;
+  margin-bottom: 20px;
+}
+
+.description-title {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 /* tech stack list */
+
+.tech-stack {
+  padding-right: 0px;
+}
 
 .modal-content ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   list-style: none;
-  padding: 0;
-  justify-items: center;
+  justify-items: left;
   gap: 5px;
   padding: 0 400px;
+  padding-left: 120px;
+  padding-right: 0px;
   margin-bottom: 50px;
 }
 
 .modal-content li {
   display: flex;
   align-items: center;
-  text-align: center;
+  text-align: left;
   justify-content: center;
 }
 
@@ -77,37 +117,15 @@
 /* image grid */
 
 .modal-images {
-  display: grid; 
+  display: flex;
+  flex: 2; 
   grid-template-columns: repeat(3, 1fr); 
   gap: 10px; 
   margin: 10px auto; 
 }
 
 .modal-images img{
-  width: 100%; 
+  width: 400px; 
   height: auto;
 }
 
-/* title elements */
-
-.title{
-  font-size: 50px;
-  margin-bottom: 50px;
-}
-
-.stack{
-margin: 20px;
-font-size: 20px;
-}
-
-
-/* not sure this code is necessary. saving until further confirmation */
-/* .modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: auto;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  border-radius: 5px;
-} */
