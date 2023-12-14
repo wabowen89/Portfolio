@@ -63,6 +63,7 @@ export default function Modal({ project, handleCloseModal }) {
             )}
           </div>
         </div>
+        <h1 className="image-title">Pictures</h1>
         <div className="modal-images">
           {project.proImages.map((image) => {
             const imageElement = (
