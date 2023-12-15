@@ -4,7 +4,7 @@ export const projects = [
     subtitle: "RC Jeep Willy Project",
     description:
       "This project is a future gift for my nephew. I designed a 3D model of my father's 1942 Jeep Willy in Fusion 360. Utilizing pictures of the jeep as well as pictures found online, I developed a 3D model in Fusion360. All parts are printed using a Flashforge Finder3. I then purchased some Arduino Uno R3's as well as a few NRF24L01 wireless transceivers, L298N motor drivers, motors, servos, and joysticks. I then utilized the native Arduino IDE to program the Arduino's to interface with each of the components followed by communication between two Arduino boards. This has been a process of trail and error as I am constantly running into new problems that are outside my knowledge scope. I am still in the process of printing the body and parts to be added to the body. Features to come: LED headlights and a speaker to play Jeep noises",
-    src: "./gifs/HoneyHome.gif",
+    src: "./assets/jeep/jeep-full.png",
     alt: "1942 Jeep Willy Model",
     stack: [
       "Arduino Uno R3",
@@ -16,9 +16,12 @@ export const projects = [
       "NRF24L01 Wireless Transceiver",
       "L298N Motor Driver",
       "Fusion360",
-      "flashforge Finder3",
+      "Flashforge Finder3",
     ],
-    features: ["dogs", "cats"],
+    features: [
+      "Add speaker and code to play jeep noises",
+      "Add headlights and code to turn them on",
+    ],
     github: "https://github.com/orgs/Jeep-Willy/repositories",
     website: "",
     appStore: "",
@@ -27,6 +30,11 @@ export const projects = [
         src: "./assets/jeep/jeep-full.png",
         alt: "jeep-full",
         descr: "Intended Complete Form",
+      },
+      {
+        src: "./assets/jeep/jeep-real.jpg",
+        alt: "jeep-real",
+        descr: "Basis for Model",
       },
       {
         src: "./assets/jeep/jeep-full-back.png",
@@ -67,6 +75,26 @@ export const projects = [
         src: "./assets/jeep/jeep-steering-V4.png",
         alt: "jeep-steering-V4",
         descr: "Version 4 of Steering Assembly",
+      },
+      {
+        src: "./assets/jeep/jeep-printed-rear-body.jpg",
+        alt: "jeep-printed-rear-body",
+        descr: "First Attempted Body Print. Two Different Print Methods",
+      },
+      {
+        src: "./assets/jeep/jeep-printed-rear-gearbox.jpg",
+        alt: "jeep-printed-rear-gearbox",
+        descr: "Printed Rear Gearbox",
+      },
+      {
+        src: "./assets/jeep/jeep-printed-electronics.jpg",
+        alt: "jeep-printed-electronics",
+        descr: "Printed Chassis with Electronics Installed",
+      },
+      {
+        src: "./assets/jeep/jeep-printed-electronics2.jpg",
+        alt: "jeep-printed-electronics2",
+        descr: "Printed Chassis with Electronics Installed",
       },
     ],
   },
