@@ -18,23 +18,57 @@ export const projects = [
       "Fusion360",
       "flashforge Finder3",
     ],
-    proImages: [
-      {
-        src: "./gifs/HoneyHome.gif",
-        alt: "temp",
-      },
-      {
-        src: "./gifs/HoneyHome.gif",
-        alt: "temp",
-      },
-      {
-        src: "./gifs/HoneyHome.gif",
-        alt: "temp",
-      },
-    ],
+    features: ["dogs", "cats"],
     github: "https://github.com/orgs/Jeep-Willy/repositories",
     website: "",
-    appStore: "a",
+    appStore: "",
+    proImages: [
+      {
+        src: "./assets/jeep/jeep-full.png",
+        alt: "jeep-full",
+        descr: "Intended Complete Form",
+      },
+      {
+        src: "./assets/jeep/jeep-full-back.png",
+        alt: "jeep-full-back-left",
+        descr: "View From Behind",
+      },
+      {
+        src: "./assets/jeep/jeep-interior.png",
+        alt: "jeep-full-back",
+        descr: "View From Behind",
+      },
+      {
+        src: "./assets/jeep/jeep-front.png",
+        alt: "jeep-front",
+        descr: "View of Front",
+      },
+      {
+        src: "./assets/jeep/jeep-rear.png",
+        alt: "jeep-rear",
+        descr: "View of Rear",
+      },
+      {
+        src: "./assets/jeep/jeep-left-side.png",
+        alt: "jeep-left-side",
+        descr: "View From Left Side",
+      },
+      {
+        src: "./assets/jeep/jeep-rear-gears.png",
+        alt: "jeep-rear-gears",
+        descr: "Rear Gearbox",
+      },
+      {
+        src: "./assets/jeep/jeep-steering-V3.png",
+        alt: "jeep-steering-V3",
+        descr: "Version 3 of Steering Assembly",
+      },
+      {
+        src: "./assets/jeep/jeep-steering-V4.png",
+        alt: "jeep-steering-V4",
+        descr: "Version 4 of Steering Assembly",
+      },
+    ],
   },
   {
     title: "bLinkup Sample Application",
