@@ -26,10 +26,10 @@ export default function Modal({ project, handleCloseModal }) {
           <div className="features-container">
             <h2 className="features-title">Upcoming Features</h2>
             <div className="features-list">
-                {project.features.map((item, index) => {
-                  const featureItem = <li key={index}>{item}</li>;
-                  return featureItem;
-                })}
+              {project.features.map((item, index) => {
+                const featureItem = <li key={index}>{item}</li>;
+                return featureItem;
+              })}
             </div>
           </div>
         )}
@@ -43,7 +43,10 @@ export default function Modal({ project, handleCloseModal }) {
           </div>
           <div className="links">
             <h3>
-              Github: <a href={project.github}>{project.github}</a>
+              Github:{" "}
+              <a href={project.github} target="_blank">
+                {project.github}
+              </a>
             </h3>
             {project.website && (
               <h3>
