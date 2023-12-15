@@ -53,9 +53,9 @@
   max-height: 500px;
   width: auto;
   transform: translate(-50%, -50%);
-  background: white;
+  background:#DDDCDC;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   color: black;
   overflow-y: auto;
 }
@@ -159,6 +159,11 @@
   text-indent: 24px;
 }
 
+.links a{
+  color: blue;
+  text-decoration: underline;
+}
+
 .image-title {
   font-size: 50px;
   margin-bottom: 20px;
@@ -168,14 +173,18 @@
 
 .modal-images {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   flex: 2; 
   grid-template-columns: repeat(3, 1fr); 
   gap: 10px; 
   margin: 10px auto; 
+  justify-content: center;
 }
 
 .modal-images img{
   width: 400px; 
   height: auto;
+
 }
 
