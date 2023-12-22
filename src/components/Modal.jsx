@@ -35,35 +35,19 @@ export default function Modal({ project, handleCloseModal }) {
         )}
         <div className="links-container">
           <div className="links-title">
-            {project.website || project.appStore ? (
-              <h2>Links:</h2>
-            ) : (
-              <h2>Link:</h2>
-            )}
+            <h2>Links</h2>
           </div>
-          <div className="links">
-            <h3>
-              Github:{" "}
-              <a href={project.github} target="_blank">
-                {project.github}
-              </a>
-            </h3>
-            {project.website && (
-              <h3>
-                Website:{" "}
-                <a href={project.website} target="_blank">
-                  {project.website}
-                </a>
-              </h3>
-            )}
-            {project.appStore && (
-              <h3>
-                App Store:{" "}
-                <a href={project.appStore} target="_blank">
-                  {project.appStore}
-                </a>
-              </h3>
-            )}
+          <div className="link-items-container">
+            {project.links.map((item, index) => {
+              return (
+                <div className="links" key={index}>
+                  <h3 className="">{item.title}:</h3>
+                  <a href={item.address} target="_blank">
+                    {item.address}
+                  </a>
+                </div>
+              );
+            })}
           </div>
         </div>
         <h1 className="image-title">Pictures</h1>
