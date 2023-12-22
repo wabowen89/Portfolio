@@ -40,10 +40,17 @@ export default function Projects() {
           {projects.map((project) => (
             <div className="bg-gray-900 bg-opacity-75 p-4">
               <img
-                className="w-full h-full object-cover object-center mb-4 cursor-pointer"
+                className="w-500 h-50 object-cover object-center mb-4 cursor-pointer"
                 src={project.src}
                 alt={project.alt}
                 onClick={() => handleOpenModal(project)}
+                style={{
+                  position: "relative",
+                  left: "50%",
+                  height: "50%",
+                  width: "100%",
+                  transform: "translateX(-50%)"
+                }}
               />
               <h1
                 className="title-font text-lg font-medium text-white mb-3 cursor-pointer"
