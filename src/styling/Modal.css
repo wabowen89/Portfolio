@@ -139,29 +139,29 @@
 }
 
 /* Links */
-.links-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+.links-container {
   margin-bottom: 20px;
 }
 
-.links-title{
+.links-title {
   display: flex;
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-.links{
+.links {
   display: flex;
-  flex-direction: column;
-  text-align: left;
-  text-indent: 24px;
+  align-items: center;
+  margin-left: 24px;
 }
 
-.links a{
-  color: blue;
+.links h3 {
+  margin-right: 10px;
+}
+
+.links a {
   text-decoration: underline;
+  color: blue;
 }
 
 .image-title {
