@@ -36,33 +36,6 @@ export default function Projects() {
             Github links, and any other links associated with the project.
           </p>
         </div>
-
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {projects.map((project) => (
-            <div className="bg-gray-900 bg-opacity-75 p-2">
-              <img
-                className="object-cover object-center mb-4 cursor-pointer"
-                src={project.src}
-                alt={project.alt}
-                onClick={() => handleOpenModal(project)}
-                style={{
-                  position: "relative",
-                  left: "50%",
-                  height: "100%",
-                  width: "100%",
-                  transform: "translateX(-50%)"
-                }}
-              />
-              <h1
-                className="title-font text-lg font-medium text-white mb-3 cursor-pointer"
-                onClick={() => handleOpenModal(project)}
-              >
-                {project.title}
-              </h1>
-            </div>
-          ))}
-        </div> */}
-
         <div className="grid-container">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {projects.map((project) => (
