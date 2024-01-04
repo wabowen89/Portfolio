@@ -3,7 +3,7 @@ export const projects = [
     title: "Remote Controlled 1942 Jeep Willy",
     subtitle: "RC Jeep Willy Project",
     description:
-      "This project is a future gift for my nephew. I designed a 3D model of my father's 1942 Jeep Willy in Fusion 360 utilizing pictures of the jeep as well as pictures found online. All parts are printed using a Flashforge Finder3 in standard PLA. I then purchased some Arduino Uno R3's as well as a few NRF24L01 wireless transceivers, L298N motor drivers, motors, servos, and joysticks. I then utilized the native Arduino IDE to program the Arduino's to interface with each of the components followed by communication between two Arduino boards. This has been a process of trail and error as I am constantly running into new problems that are outside my knowledge scope. I am still in the process of printing the body, redesigning the steering assembly, and printing the parts to be added to the body.",
+      "In this project, I'm building a special gift for my nephew – a 3D-printed replica of my dad's old 1942 Jeep Willy! I started by diving into photos and recreating the Jeep in Fusion 360. Now, my Flashforge Finder3 is bringing it to life, one layer at a time. But this isn't just a model – it's getting \"brains\" with Arduinos, wireless communication, motors, and a servo, all controlled by code written in the Arduino IDE. It's been a challenging learning curve, full of unexpected bumps, but that's part of the joy! Every stage is a cycle of creative problem-solving. I brainstorm ideas, test them (sometimes to spectacular failure), learn from the wreckage, and try again. Right now, the steering mechanism is taking center stage, completing the intricate puzzle of the interior. Next, the Jeep's body will roll off the printer, followed by an assembly line of exterior additions. Then comes the grand finale: final assembly and a fresh coat of paint. I can't wait to see this project roll into the finish line and use everything I've learned to fuel future adventures in creation.",
     src: "./assets/jeep/jeep-full.png",
     alt: "1942 Jeep Willy Model",
     stack: [
@@ -109,6 +109,13 @@ export const projects = [
     src: "./assets/blinkup/login.jpg",
     alt: "bLinkup Sample App Login Screen",
     stack: ["Kotlin", "bLinkup SDK", "Android Studio"],
+    features: ["Webhook notifications", "Google Play Store Link"],
+    links: [
+      {
+        title: "Github",
+        address: "https://github.com/blinkupsdk/bLinkupKotlinSample",
+      },
+    ],
     proImages: [
       {
         src: "./assets/blinkup/login.jpg",
@@ -171,13 +178,6 @@ export const projects = [
         descr: "Setting Tab",
       },
     ],
-    features: ["Webhook notifications", "Google Play Store Link"],
-    links: [
-      {
-        title: "Github",
-        address: "https://github.com/blinkupsdk/bLinkupKotlinSample",
-      },
-    ],
   },
   {
     title: "HoneyHome",
@@ -196,6 +196,17 @@ export const projects = [
       "PostgreSQL",
       "Render",
     ],
+    features: [],
+    links: [
+      {
+        title: "Github",
+        address: "https://github.com/orgs/Team-WHAK/repositories",
+      },
+      {
+        title: "Website",
+        address: "https://honey-home.onrender.com/",
+      },
+    ],
     proImages: [
       {
         src: "./gifs/HoneyHome.gif",
@@ -208,16 +219,6 @@ export const projects = [
       {
         src: "./gifs/HoneyHome.gif",
         alt: "temp",
-      },
-    ],
-    links: [
-      {
-        title: "Github",
-        address: "https://github.com/orgs/Team-WHAK/repositories",
-      },
-      {
-        title: "Site",
-        address: "",
       },
     ],
   },
