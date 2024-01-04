@@ -31,23 +31,24 @@ export default function Projects() {
             Apps I've Built
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Below are a few gifs displaying the UI for web applications I have
-            built. Please click the gif to view the source code on my GitHub.
+            Below are a few images displaying projects I have worked on. Please
+            click the image to view a description, the tech stack, more images,
+            Github links, and any other links associated with the project.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {projects.map((project) => (
-            <div className="bg-gray-900 bg-opacity-75 p-4">
+            <div className="bg-gray-900 bg-opacity-75 p-2">
               <img
-                className="w-500 h-50 object-cover object-center mb-4 cursor-pointer"
+                className="object-cover object-center mb-4 cursor-pointer"
                 src={project.src}
                 alt={project.alt}
                 onClick={() => handleOpenModal(project)}
                 style={{
                   position: "relative",
                   left: "50%",
-                  height: "50%",
+                  height: "100%",
                   width: "100%",
                   transform: "translateX(-50%)"
                 }}
@@ -60,6 +61,28 @@ export default function Projects() {
               </h1>
             </div>
           ))}
+        </div> */}
+
+        <div className="grid-container">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {projects.map((project) => (
+              <div className="bg-gray-900 bg-opacity-75 p-2">
+                <img
+                  className="object-cover object-center mb-4 cursor-pointer"
+                  style={{height: "200px", width: "100%"}}
+                  src={project.src}
+                  alt={project.alt}
+                  onClick={() => handleOpenModal(project)}
+                />
+                <h1
+                  className="title-font text-lg font-medium text-white mb-3 cursor-pointer"
+                  onClick={() => handleOpenModal(project)}
+                >
+                  {project.title}
+                </h1>
+              </div>
+            ))}
+          </div>
         </div>
 
         {showModal && (
