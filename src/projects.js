@@ -179,47 +179,47 @@ export const projects = [
       },
     ],
   },
-  {
-    title: "HoneyHome",
-    subtitle: "LEARN Capstone Project",
-    description:
-      "This is my full stack project completed with LEARN academy. I worked with four teammates to create this application. We utilized JS, React, Ruby, Ruby on Rails, and PostgreSQL along with Devise and JWT Authentication.",
-    src: "./gifs/HoneyHome.gif",
-    alt: "HoneyHome Login Screen",
-    stack: [
-      "Javascript",
-      "Ruby",
-      "HTML",
-      "CSS",
-      "React.js",
-      "Ruby on Rails",
-      "PostgreSQL",
-      "Render",
-    ],
-    features: [],
-    links: [
-      {
-        title: "Github",
-        address: "https://github.com/orgs/Team-WHAK/repositories",
-      },
-      {
-        title: "Website",
-        address: "https://honey-home.onrender.com/",
-      },
-    ],
-    proImages: [
-      {
-        src: "./gifs/HoneyHome.gif",
-        alt: "temp",
-      },
-      {
-        src: "./gifs/HoneyHome.gif",
-        alt: "temp",
-      },
-      {
-        src: "./gifs/HoneyHome.gif",
-        alt: "temp",
-      },
-    ],
-  },
+  // {
+  //   title: "HoneyHome",
+  //   subtitle: "LEARN Capstone Project",
+  //   description:
+  //     "This is my full stack project completed with LEARN academy. I worked with four teammates to create this application. We utilized JS, React, Ruby, Ruby on Rails, and PostgreSQL along with Devise and JWT Authentication.",
+  //   src: "./assets/honeyhome/home-page.jpg",
+  //   alt: "HoneyHome Login Screen",
+  //   stack: [
+  //     "Javascript",
+  //     "Ruby",
+  //     "HTML",
+  //     "CSS",
+  //     "React.js",
+  //     "Ruby on Rails",
+  //     "PostgreSQL",
+  //     "Render",
+  //   ],
+  //   features: [],
+  //   links: [
+  //     {
+  //       title: "Github",
+  //       address: "https://github.com/orgs/Team-WHAK/repositories",
+  //     },
+  //     {
+  //       title: "Website",
+  //       address: "https://honey-home.onrender.com/",
+  //     },
+  //   ],
+  //   proImages: [
+  //     {
+  //       src: "./gifs/HoneyHome.gif",
+  //       alt: "temp",
+  //     },
+  //     {
+  //       src: "./gifs/HoneyHome.gif",
+  //       alt: "temp",
+  //     },
+  //     {
+  //       src: "./gifs/HoneyHome.gif",
+  //       alt: "temp",
+  //     },
+  //   ],
+  // },
 ];
