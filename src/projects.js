@@ -106,7 +106,7 @@ export const projects = [
     subtitle: "Demonstration Application for bLinkup SDK",
     description:
       'This mobile application, specially designed for Android devices, unveils the capabilities of the bLinkup SDK, offering developers a captivating experience. It seamlessly blends various features to enhance social connections and event engagement. Users can effortlessly befriend each other within the app, receive timely notifications when their bLinkup friends arrive at events, and navigate interactive venue maps dotted with clickable "bLinkpoints"—strategically placed by event owners—to effortlessly coordinate meet-ups by sharing the location information directly through apps on their phones. Geofencing technology eliminates the need for manual check-ins, automatically notifying users when they enter designated venues. The app also integrates with phone contacts, allowing users to discover bLinkup users among their friends and send friend requests seamlessly. For developers, the app offers a manual check-in/out functionality, fostering convenient testing and debugging of events. This app is a powerful showcase of the bLinkup SDK\'s potential, revolutionizing user experiences with its suite of comprehensive and engaging features, crafted collaboratively by me and two other developers.',
-    src: "./assets/blinkup/login.jpg",
+    src: "./assets/blinkup/cover-pic.jpg",
     alt: "bLinkup Sample App Login Screen",
     stack: ["Kotlin", "bLinkup SDK", "Android Studio"],
     features: ["Webhook notifications", "Google Play Store Link"],
